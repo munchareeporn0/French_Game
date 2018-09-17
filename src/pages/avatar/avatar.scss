@@ -1,0 +1,33 @@
+page-avatar {
+    .bg {
+        background: linear-gradient(to bottom, #48508e 0%, #d65555 100%)
+    }
+    .circle-pic {
+        width: 50px;
+        height: 50px;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+    }
+    .center {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding-bottom: 5px;
+        height: 100%;
+    }
+    ion-col {
+        padding: 10px 10px 10px 10px;
+    }
+    .three {
+        margin: 0px 42px 0px 42px;
+    }
+    .bg-trans {
+        background-color: rgba(255, 0, 0, 0.3);
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .style-head {
+        padding: 40px 0px 45px 0px;
+    }
+}

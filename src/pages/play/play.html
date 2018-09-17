@@ -17,7 +17,7 @@
     <ion-grid>
         <ion-row>
             <ion-col col-12 col-12 col-sm-12 col-lg-12 col-xl-12 col-md-12>
-                <h5 ion-text class="right">1/20</h5>
+                <h5 ion-text class="right">{{ q_no+1 }}/20</h5>
             </ion-col>
         </ion-row>
         <ion-row padding>
@@ -30,16 +30,16 @@
         </ion-row>
         <ion-row class="pad-row">
             <ion-col col-12 col-sm-12 col-lg-12 col-xl-12 col-md-12>
-                <button ion-button block item-start default color="primary" (click)='correct()'>le mien</button>
+                <button ion-button block item-start default color="primary" (click)='verifyAnswer(0)'>le mien</button>
             </ion-col>
             <ion-col col-12 col-sm-12 col-lg-12 col-xl-12 col-md-12>
-                <button ion-button block item-start default color="primary">la mienne</button>
+                <button ion-button block item-start default color="primary" (click)='verifyAnswer(1)'>la mienne</button>
             </ion-col>
             <ion-col col-12 col-sm-12 col-lg-12 col-xl-12 col-md-12>
-                <button ion-button block item-start default color="primary">les miens</button>
+                <button ion-button block item-start default color="primary" (click)='verifyAnswer(2)'>les miens</button>
             </ion-col>
             <ion-col col-12 col-sm-12 col-lg-12 col-xl-12 col-md-12>
-                <button ion-button block item-start default color="primary">les miennes</button>
+                <button ion-button block item-start default color="primary" (click)='verifyAnswer(3)'>les miennes</button>
             </ion-col>
         </ion-row>
         <ion-row>

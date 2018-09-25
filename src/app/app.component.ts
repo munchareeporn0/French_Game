@@ -9,13 +9,17 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { MenuPage } from '../pages/menu/menu';
 import { AvatarPage } from '../pages/avatar/avatar';
 import { HomePage } from '../pages/home/home';
+import { ProfilePage } from '../pages/profile/profile';
+import { SelectTopicPage } from '../pages/study/select-topic/select-topic';
+import { StudyProcessPage } from '../pages/study/study-process/study-process';
+
 
 
 @Component({
   templateUrl: 'app.html'
 })
 export class MyApp {
-  rootPage:any = PlayPage;
+  rootPage:any = StudyProcessPage;
 
   constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen) {
     platform.ready().then(() => {

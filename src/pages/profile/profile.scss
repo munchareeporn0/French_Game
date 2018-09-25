@@ -1,3 +1,24 @@
 page-profile {
+    @import '../../theme/mixin.scss';
 
+    ion-content {
+        margin: 0 auto;
+        padding: 0;
+        left: calc((100vw - 1140px)/2);
+        h4 {
+            color: red;
+        }
+    }
+    .profile-container {
+        background-color: map-get($colors, primary);
+        width: $width;
+        height: 208px;
+        text-align: center;
+        padding-top: 2rem;
+        img {
+            width: 160px;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+    }
 }

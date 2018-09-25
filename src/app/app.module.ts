@@ -19,6 +19,8 @@ import { PlayTopicPage } from '../pages/play-topic/play-topic';
 import { StudyPage } from './../pages/study/study';
 import { RulesPage } from '../pages/rules/rules';
 import { ProfilePage } from '../pages/profile/profile';
+import { SelectTopicPage } from '../pages/study/select-topic/select-topic';
+import { StudyProcessPage } from '../pages/study/study-process/study-process';
 
 @NgModule({
   declarations: [
@@ -34,7 +36,9 @@ import { ProfilePage } from '../pages/profile/profile';
     ProfilePage,
     AvatarPage,
     ModePage,
-    PlayPage
+    PlayPage,
+    SelectTopicPage,
+    StudyProcessPage
   ],
   imports: [
     BrowserModule,
@@ -54,7 +58,9 @@ import { ProfilePage } from '../pages/profile/profile';
     ProfilePage,
     AvatarPage,
     ModePage,
-    PlayPage
+    PlayPage,
+    SelectTopicPage,
+    StudyProcessPage
   ],
   providers: [
     StatusBar,

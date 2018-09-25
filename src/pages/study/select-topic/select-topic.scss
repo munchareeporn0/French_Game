@@ -1,0 +1,42 @@
+page-select-topic {
+    .topic-container {
+        height: calc(100vh - 96px);
+        width: 100%;
+        background-color: map-get($colors, primary);
+        padding-top: 20px;
+    }
+    ion-header {
+        height: 96px;
+        text-align: center;
+        background-color: map-get($colors, primary);
+    }
+    ion-title {
+        font-size: 2rem;
+        height: 96px;
+    }
+    .pad-row>div {
+        width: 1108px;
+        height: 48px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .pad-row>div>button {
+        height: 100%;
+        border-radius: 4px;
+        margin: 0;
+        padding: 0;
+    }
+    .button-inner {
+        justify-content: left;
+        border: 0.1px solid  rgba(0,0,0,0.1);
+        >span {
+            font-size: 1.75rem !important;
+            padding-left: 20px;
+        }
+        >.progress {
+            font-size: 1.25rem !important;
+            position: absolute;
+            right: 20px;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+@import './variables.scss';
+ion-header {
+    width: $width;
+    height: 72px;
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    left: calc((100vw - 1140px)/2);
+    background-color: map-get($colors, primary);
+}
+
+ion-navbar {
+    font-size: 2.5rem;
+}

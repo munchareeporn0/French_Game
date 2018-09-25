@@ -47,3 +47,15 @@ $colors: ( primary: #48508e, secondary: #39e833, danger: #dd4230, light: #f4f4f4
 // --------------------------------------------------
 @import "roboto";
 @import "noto-sans";
+
+$width: 1140px;
+$theme-colors: (
+  primary: #48508e,
+  secondary: #d65555,
+  light: #f3f3f3,
+  dark: #151515,
+  info: #ccc,
+  success: #28a745,
+  warning: #ffc107,
+  danger: #dc3545
+);

@@ -19,6 +19,10 @@ import { PlayTopicPage } from '../pages/play-topic/play-topic';
 import { StudyPage } from './../pages/study/study';
 import { RulesPage } from '../pages/rules/rules';
 import { ProfilePage } from '../pages/profile/profile';
+import { IonicStorageModule } from '@ionic/storage';
+import { HttpClientModule } from '@angular/common/http';
+import { NativeAudio } from '@ionic-native/native-audio';
+import { DataProvider } from '../providers/data/data';
 
 @NgModule({
   declarations: [
@@ -34,11 +38,13 @@ import { ProfilePage } from '../pages/profile/profile';
     ProfilePage,
     AvatarPage,
     ModePage,
-    PlayPage
+    PlayPage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    IonicStorageModule.forRoot(),
+    HttpClientModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -58,8 +64,11 @@ import { ProfilePage } from '../pages/profile/profile';
   ],
   providers: [
     StatusBar,
+    Storage,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    NativeAudio,
+    DataProvider,
   ]
 })
 export class AppModule {}

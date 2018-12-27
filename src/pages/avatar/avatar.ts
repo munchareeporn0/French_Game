@@ -10,11 +10,13 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
+
   selector: 'page-avatar',
   templateUrl: 'avatar.html',
 })
 export class AvatarPage {
-
+  inputname:string;
+  key:string = "username";
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 

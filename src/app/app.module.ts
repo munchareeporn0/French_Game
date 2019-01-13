@@ -23,6 +23,8 @@ import { IonicStorageModule } from '@ionic/storage';
 import { HttpClientModule } from '@angular/common/http';
 import { NativeAudio } from '@ionic-native/native-audio';
 import { DataProvider } from '../providers/data/data';
+import { HttpModule } from '@angular/http';
+
 
 @NgModule({
   declarations: [
@@ -45,6 +47,7 @@ import { DataProvider } from '../providers/data/data';
     IonicModule.forRoot(MyApp),
     IonicStorageModule.forRoot(),
     HttpClientModule,
+    HttpModule,
   ],
   bootstrap: [IonicApp],
   entryComponents: [
